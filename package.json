@@ -15,7 +15,7 @@
     "// REALWORLD ///////////": "",
     "realworld:install": "npm run realworld:frontend:install",
     "realworld:frontend:install": "cd realworld/frontend && npm i",
-    "realworld:start": "npm run realworld:backend:start",
+    "realworld:start": "npm run realworld:frontend:start",
     "realworld:frontend:start": "cd realworld/frontend && npm start",
     "realworld:cy": "npm run cy-run-record -- --spec \"cypress/integration/realworld/**/*\"",
     "// EXERCISES ///////////": "",

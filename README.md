@@ -26,9 +26,9 @@ The steps above launch the back-end and application, the front-end application, 
 ```bash
       Spec                           Tests  Passing  Failing  Pending  Skipped
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ ✔  realworld/smoke.spec.js  00:01     2        2        -        -        - │
+│ ✔  realworld/smoke.spec.js  00:01     1        1        -        -        - │
 └─────────────────────────────────────────────────────────────────────────────┘
-  ✔  All specs passed!        00:01     2        2        -        -        -
+  ✔  All specs passed!        00:01     1        1        -        -        -
 ```
 you're ready for the course!
 

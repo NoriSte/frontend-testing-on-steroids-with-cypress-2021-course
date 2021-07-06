@@ -34,7 +34,7 @@ context('The sign up page', () => {
     cy.get('.form-control').eq(1).type(`foo${random}@bar.com`)
     cy.get('.form-control').eq(2).type('baz')
 
-    cy.intercept('POST', 'http://localhost:3100/api/users').as('signup-request')
+    cy.intercept('POST', '**/api/users').as('signup-request')
 
     cy.get('button').click()
     cy.wait('@signup-request')
