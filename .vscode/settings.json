@@ -4,13 +4,13 @@
     "source.fixAll.eslint": true
   },
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#f2e149",
-    "activityBar.activeBorder": "#0b9587",
-    "activityBar.background": "#f2e149",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#0b9587",
-    "activityBarBadge.foreground": "#e7e7e7"
+    "activityBar.activeBackground": "#7869b3",
+    "activityBar.activeBorder": "#c9a095",
+    "activityBar.background": "#7869b3",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#c9a095",
+    "activityBarBadge.foreground": "#15202b"
   },
-  "peacock.color": "#EFD919",
+  "peacock.color": "#5e4e9b",
 }

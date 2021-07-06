@@ -1,7 +1,7 @@
 {
-  "name": "javascript-testing-practical-approach-2021-course",
+  "name": "frontend-testing-on-steroids-with-cypress-2021-course",
   "version": "1.0.0",
-  "description": "Javascript Testing, a Practical Approach",
+  "description": "Front-end testing on steroids with Cypress",
   "main": "index.js",
   "scripts": {
     "postinstall": "npm run realworld:install",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoriSte/javascript-testing-practical-approach-2021-course.git"
+    "url": "git+https://github.com/NoriSte/frontend-testing-on-steroids-with-cypress-2021-course.git"
   },
   "keywords": [
     "course",
@@ -43,9 +43,9 @@
   "author": "Stefano Magni <nori.ste.magni@gmail.com> (https://github.com/NoriSte)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NoriSte/javascript-testing-practical-approach-2021-course/issues"
+    "url": "https://github.com/NoriSte/frontend-testing-on-steroids-with-cypress-2021-course/issues"
   },
-  "homepage": "https://github.com/NoriSte/javascript-testing-practical-approach-2021-course#readme",
+  "homepage": "https://github.com/NoriSte/frontend-testing-on-steroids-with-cypress-2021-course#readme",
   "devDependencies": {
     "@cypress/react": "^4.16.4",
     "@testing-library/cypress": "7.0.1",

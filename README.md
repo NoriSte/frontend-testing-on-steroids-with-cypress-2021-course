@@ -1,10 +1,10 @@
-# Javascript Testing, a Practical Approach
+# Front-end testing on steroids with Cypress
 
-![Javascript Testing, a Practical Approach](assets/images/course-banner.png)
+![Front-end testing on steroids with Cypress](assets/images/course-banner.png)
 
 ## Description
 
-This is the [reference repository](https://github.com/NoriSte/javascript-testing-practical-approach-2021-course) with all the contents and the examples of the "Javascript Testing, a Practical Approach" course.
+This is the [reference repository](https://github.com/NoriSte/frontend-testing-on-steroids-with-cypress-2021-course) with all the contents and the examples of the "Front-end testing on steroids with Cypress" course.
 
 The course starts from the peak of the testing pyramid and goes down instead of following the "standard" testing path.
 
