@@ -21,7 +21,7 @@ context('The sign up page', () => {
     // data-testid selectors are more resilient compared to classes, ids, etc.
     cy.get('[data-testid=username]').type(`foo${random}`)
     cy.get('[data-testid=email]').type(`foo${random}@bar.com`)
-    cy.get('[data-testid=password]').type('baz')
+    cy.get('[data-testid=password]').type('bazbazbaz')
 
     cy.intercept('POST', '**/api/users').as('signup-request')
 

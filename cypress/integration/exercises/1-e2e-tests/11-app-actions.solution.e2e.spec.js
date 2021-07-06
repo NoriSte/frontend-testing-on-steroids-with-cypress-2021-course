@@ -17,7 +17,7 @@ Cypress.Commands.add('register', { prevSubject: 'optional' }, function (_subject
   const credentials = {
     username: `foo${random}`,
     email: `foo${random}@bar.com`,
-    password: 'baz',
+    password: 'bazbazbaz',
   }
 
   cy.intercept('POST', '**/api/users').as('signup-request')

@@ -25,7 +25,7 @@ context('The sign up page', () => {
 
     cy.findByPlaceholderText('Username').type(`foo${random}`)
     cy.findByPlaceholderText('Email').type(`foo${random}@bar.com`)
-    cy.findByPlaceholderText('Password').type('baz')
+    cy.findByPlaceholderText('Password').type('bazbazbaz')
 
     cy.intercept('POST', '**/api/users').as('signup-request')
 
@@ -38,7 +38,7 @@ context('The sign up page', () => {
         user: {
           username: `foo${random}`,
           email: `foo${random}@bar.com`,
-          password: 'baz',
+          password: 'bazbazbaz',
         },
       })
 
@@ -50,7 +50,7 @@ context('The sign up page', () => {
 
     cy.findByPlaceholderText('Username').type(`foo${random}`)
     cy.findByPlaceholderText('Email').type(`foo${random}@bar.com`)
-    cy.findByPlaceholderText('Password').type('baz')
+    cy.findByPlaceholderText('Password').type('bazbazbaz')
 
     cy.intercept('POST', '**/api/users').as('signup-request')
 
@@ -62,7 +62,7 @@ context('The sign up page', () => {
         user: {
           username: `foo${random}`,
           email: `foo${random}@bar.com`,
-          password: 'baz',
+          password: 'bazbazbaz',
         },
       })
 

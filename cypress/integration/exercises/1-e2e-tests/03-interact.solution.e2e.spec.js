@@ -29,7 +29,7 @@ context('The sign up page', () => {
   it('Should allow typing into the input fields', () => {
     cy.get('.form-control').eq(0).type('Foo')
     cy.get('.form-control').eq(1).type('Bar')
-    cy.get('.form-control').eq(2).type('Baz')
+    cy.get('.form-control').eq(2).type('bazbazbaz')
   })
 
   it('Playground: limit the scope of cy.get by running it within the form', () => {
@@ -42,7 +42,7 @@ context('The sign up page', () => {
 
       cy.get('@inputFields').eq(0).type('Foo')
       cy.get('@inputFields').eq(1).type('Bar')
-      cy.get('@inputFields').eq(2).type('Baz')
+      cy.get('@inputFields').eq(2).type('bazbazbaz')
     })
   })
 })

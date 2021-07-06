@@ -32,7 +32,7 @@ context('The sign up page', () => {
 
     cy.get('.form-control').eq(0).type(`foo${random}`)
     cy.get('.form-control').eq(1).type(`foo${random}@bar.com`)
-    cy.get('.form-control').eq(2).type('baz')
+    cy.get('.form-control').eq(2).type('bazbazbaz')
 
     cy.intercept('POST', '**/api/users').as('signup-request')
 
@@ -47,7 +47,7 @@ context('The sign up page', () => {
 
     cy.get('.form-control').eq(0).type(`foo${random}`)
     cy.get('.form-control').eq(1).type(`foo${random}@bar.com`)
-    cy.get('.form-control').eq(2).type('baz')
+    cy.get('.form-control').eq(2).type('bazbazbaz')
 
     cy.intercept('POST', '**/api/users').as('signup-request')
 

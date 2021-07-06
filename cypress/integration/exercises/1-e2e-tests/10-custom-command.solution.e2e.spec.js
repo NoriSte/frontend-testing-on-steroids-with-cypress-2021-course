@@ -36,7 +36,7 @@ Cypress.Commands.add('register', { prevSubject: 'optional' }, function (_subject
     delay: 0,
     log: false,
   })
-  cy.findByPlaceholderText('Password', noLog).type('baz', { delay: 0, log: false })
+  cy.findByPlaceholderText('Password', noLog).type('bazbazbaz', { delay: 0, log: false })
 
   cy.intercept('POST', '**/api/users').as('signup-request')
 
@@ -48,7 +48,7 @@ Cypress.Commands.add('register', { prevSubject: 'optional' }, function (_subject
       user: {
         username: `foo${random}`,
         email: `foo${random}@bar.com`,
-        password: 'baz',
+        password: 'bazbazbaz',
       },
     })
 
