@@ -1,14 +1,9 @@
 /// <reference types="Cypress" />
 
-import jestExpect from 'expect'
-
 /**
  * Main goals
  * - Assert about the response status code
  * - Assert about the response payload
- *
- * Additional goals
- * - Leverage Jest' expect instead of Cypress' expect (FYI: Cypress' expect is Chai' expect)
  *
  * What to learn
  * - Making more assertions on the same subject

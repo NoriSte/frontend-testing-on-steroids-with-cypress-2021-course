@@ -1,14 +1,9 @@
 /// <reference types="Cypress" />
 
-import jestExpect from 'expect'
-
 /**
  * Main goals
  * - Assert about the response status code
  * - Assert about the response payload
- *
- * Additional goals
- * - Leverage Jest' expect instead of Cypress' expect (FYI: Cypress' expect is Chai' expect)
  *
  * What to learn
  * - Making more assertions on the same subject
@@ -66,43 +61,6 @@ context('The sign up page', () => {
       expect(responseBody.user, 'Response payload: token')
         .to.have.property('token')
         .and.to.be.a('string').and.not.to.be.empty
-    })
-
-    cy.findByText('No articles are here... yet.').should('be.visible')
-  })
-
-  it(`Playground: assert using Jest' expect the response status`, () => {
-    const random = Math.round(Math.random() * 1000000)
-
-    cy.findByPlaceholderText('Username').type(`foo${random}`)
-    cy.findByPlaceholderText('Email').type(`foo${random}@bar.com`)
-    cy.findByPlaceholderText('Password').type('bazbazbaz')
-
-    cy.intercept('POST', '**/api/users').as('signup-request')
-
-    cy.get('form').within(() => cy.findByText('Sign up').click())
-
-    cy.wait('@signup-request').then(interception => {
-      // assert about the request payload
-      jestExpect(interception.request.body).toEqual({
-        user: {
-          username: `foo${random}`,
-          email: `foo${random}@bar.com`,
-          password: 'bazbazbaz',
-        },
-      })
-
-      // assert about the response status code
-      jestExpect(interception.response.statusCode).toBe(200)
-
-      // assert about the response payload
-      jestExpect(interception.response.body).toEqual({
-        user: {
-          username: `foo${random}`,
-          email: `foo${random}@bar.com`,
-          token: jestExpect.any(String),
-        },
-      })
     })
 
     cy.findByText('No articles are here... yet.').should('be.visible')
