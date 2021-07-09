@@ -1,6 +1,6 @@
 # Front-end testing on steroids with Cypress
 
-![Front-end testing on steroids with Cypress](assets/images/course-banner.png)
+![Front-end testing on steroids with Cypress](assets/images/course-hero.png)
 
 ## Description
 
