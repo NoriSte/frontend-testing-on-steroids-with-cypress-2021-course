@@ -16,7 +16,7 @@
 // `config` is the resolved Cypress config
 // }
 
-const task = require("cypress-skip-and-only-ui/task");
 module.exports = (on, config) => {
-  on("task", task);
-};
+  // you can open devtools directly
+  // see https://docs.cypress.io/api/plugins/browser-launch-api#Modify-browser-launch-arguments
+}

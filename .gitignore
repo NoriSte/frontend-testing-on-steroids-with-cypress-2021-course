@@ -1,5 +1,4 @@
 node_modules
-_book
 cypress/videos
 yarn.lock
 package-lock.json

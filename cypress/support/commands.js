@@ -24,9 +24,5 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import "@testing-library/cypress/add-commands";
-import "./authentication/authenticate-and-visit-integration";
-import "./authentication/authenticate-integration";
-import "./signup/signup-v1";
-import "./signup/signup-v2";
-import "./signup/signup-v3";
+import '@testing-library/cypress/add-commands'
+import 'cypress-wait-until'
